@@ -1,0 +1,236 @@
+.contact-page {
+  padding-top: 70px;
+}
+
+/* Page Header */
+.page-header {
+  background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+  padding: var(--spacing-4xl) 0;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.page-header h1 {
+  color: var(--color-white);
+  margin-bottom: var(--spacing-md);
+}
+
+.page-header-subtitle {
+  font-size: var(--font-size-xl);
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: var(--spacing-4xl) 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: var(--spacing-3xl);
+}
+
+/* Contact Form */
+.contact-form-wrapper {
+  background-color: var(--color-white);
+  padding: var(--spacing-2xl);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.contact-form-wrapper h2 {
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--spacing-md);
+}
+
+.form-description {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-xl);
+}
+
+.contact-form .form-group {
+  margin-bottom: var(--spacing-lg);
+}
+
+.contact-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-gray-700);
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: var(--spacing-md);
+  border: 2px solid var(--color-gray-200);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-base);
+  transition: border-color var(--transition-fast);
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+}
+
+/* Contact Info */
+.contact-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.contact-info-card {
+  background-color: var(--color-white);
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.contact-info-card h3 {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-lg);
+}
+
+.info-item {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.info-item:last-child {
+  margin-bottom: 0;
+}
+
+.info-icon {
+  font-size: 1.5rem;
+}
+
+.info-content h4 {
+  font-size: var(--font-size-base);
+  margin-bottom: var(--spacing-xs);
+}
+
+.info-content p {
+  margin: 0;
+  color: var(--color-text-secondary);
+}
+
+.info-note {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted) !important;
+}
+
+/* Service Areas */
+.service-areas-card {
+  background-color: var(--color-white);
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.service-areas-card h3 {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-lg);
+}
+
+.service-areas-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.area-tag {
+  background-color: var(--color-bg-secondary);
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+/* Emergency Section */
+.emergency-section {
+  padding: var(--spacing-3xl) 0;
+  background-color: var(--color-bg-secondary);
+}
+
+.emergency-content {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-lg);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.emergency-icon {
+  font-size: 2.5rem;
+}
+
+.emergency-text h3 {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-sm);
+}
+
+.emergency-text p {
+  margin: 0;
+  color: var(--color-text-secondary);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-info-wrapper {
+    flex-direction: row;
+  }
+  
+  .contact-info-card,
+  .service-areas-card {
+    flex: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-info-wrapper {
+    flex-direction: column;
+  }
+  
+  .emergency-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .emergency-icon {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form-wrapper {
+    padding: var(--spacing-lg);
+  }
+  
+  .service-areas-grid {
+    justify-content: center;
+  }
+}
+
