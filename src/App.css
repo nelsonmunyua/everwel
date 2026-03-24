@@ -1,4 +1,4 @@
-/* App Layout */
+/* App Layout - Modernized */
 .app {
   min-height: 100vh;
   display: flex;
@@ -6,46 +6,13 @@
 }
 
 main {
-  flex: 1;
+  flex: 1 1 auto;
 }
 
-/* Remove default Vite styles */
-#root {
-  max-width: none;
-  margin: 0;
-  padding: 0;
-  text-align: left;
-}
 
-.logo {
-  height: auto;
-  padding: 0;
-  will-change: auto;
-  transition: none;
-}
-
-.logo:hover {
-  filter: none;
-}
-
-.logo.react:hover {
-  filter: none;
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.card {
-  padding: 0;
-}
-
-.read-the-docs {
-  color: transparent;
+/* Enhanced focus styles */
+*:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
 }
 

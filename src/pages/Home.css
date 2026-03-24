@@ -1,5 +1,4 @@
 .home-page {
-  padding-top: 70px;
 }
 
 /* Hero Section */
@@ -9,11 +8,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #1E3A5F 0%, #2563EB 50%, #3B82F6 100%);
+  background-image: url('/images/homecare-nurse.jpg');
+  background-size: cover;
+  background-position: center;
   padding: var(--spacing-5xl) var(--spacing-lg);
   overflow: hidden;
 }
 
+/* Light overlay for readability */
 .hero::before {
   content: '';
   position: absolute;
@@ -21,9 +23,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: 
-    radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.3) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(13, 148, 136, 0.2) 0%, transparent 50%);
+  background: linear-gradient(135deg, rgba(30,58,95,0.4), rgba(37,99,235,0.4));
+  z-index: 1;
 }
 
 .hero-overlay {
@@ -38,7 +39,7 @@
   max-width: 900px;
   text-align: center;
   color: var(--color-white);
-  z-index: 1;
+  z-index: 2;
 }
 
 .hero-title {
@@ -160,41 +161,12 @@
 .image-placeholder {
   width: 100%;
   max-width: 450px;
-  aspect-ratio: 1;
-  background: linear-gradient(135deg, #2563EB 0%, #1E3A5F 100%);
+  aspect-ratio: 16/9;
+  background-image: url('/images/about-team.jpg');
+  background-size: cover;
+  background-position: center;
   border-radius: var(--radius-2xl);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-white);
   box-shadow: var(--shadow-2xl);
-  position: relative;
-  overflow: hidden;
-}
-
-.image-placeholder::before {
-  content: '';
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
-  top: -50%;
-  left: -50%;
-}
-
-.image-placeholder svg {
-  width: 80px;
-  height: 80px;
-  margin-bottom: var(--spacing-lg);
-  opacity: 0.9;
-}
-
-.image-placeholder p {
-  font-size: var(--font-size-xl);
-  font-weight: 600;
-  margin: 0;
-  z-index: 1;
 }
 
 /* Services Preview */
@@ -309,6 +281,26 @@
 .services-cta {
   text-align: center;
   margin-top: var(--spacing-3xl);
+}
+
+.services-cta {
+  text-align: center;
+  margin-top: var(--spacing-3xl);
+  background-color: var(--color-primary);
+  padding: var(--spacing-2xl);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+}
+
+.services-cta .btn {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  border: 2px solid var(--color-accent-light);
+}
+
+.services-cta .btn:hover {
+  background-color: var(--color-accent-dark);
+  border-color: var(--color-accent);
 }
 
 /* Why Choose Everwel */
@@ -509,4 +501,3 @@
     max-width: 300px;
   }
 }
-

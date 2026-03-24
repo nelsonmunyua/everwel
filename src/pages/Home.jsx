@@ -119,13 +119,7 @@ const Home = () => {
               <Link to="/about" className="btn btn-primary">Learn More About Us</Link>
             </div>
             <div className="about-summary-image">
-              <div className="image-placeholder">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                </svg>
-                <p>Trusted Care in Familiar Surroundings</p>
-              </div>
+              <div className="image-placeholder"></div>
             </div>
           </div>
         </div>
